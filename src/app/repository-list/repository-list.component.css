@@ -1,0 +1,35 @@
+.repository-list {
+    text-transform: capitalize;
+      align-items: center;
+      margin-top: 50px;
+    }
+    
+  .give_flex{
+    display: flex;
+  }
+  .give_flex img{
+    width: 50%;
+    border-radius: 50%;
+  }
+  .Socialmedia{
+    display: flex;
+    margin-top: 0;
+  }
+  .techstack li{
+    background: #428bca;
+      width: 6rem;
+      text-align: center;
+      border-radius: 2rem;
+      color: white;
+  }
+  .techstack{
+  padding: .5rem;
+  list-style: none;
+  }
+  .language{
+    width: 38%;
+    border: 1px solid;
+    margin-left: 4rem;
+    margin-top: 2rem;
+  }
+  

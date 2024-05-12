@@ -1,0 +1,38 @@
+
+
+<div class="repository-list">
+   
+    <div *ngIf="repositories.length">
+    
+    <div  class="give_flex">
+      <div style="margin-left: 10rem;">
+        
+        <img src="{{repositories[0].owner.avatar_url}}"/>
+      </div>
+      <div>
+        <h2>{{repositories[0].owner.login}}</h2>
+        <p>{{userBio.bio}}</p>
+        <p>{{userBio.location}}</p>
+        <span class="Socialmedia"><p style="margin-right:1rem ;">Twitter: </p><p><a href="https://twitter.com/@{{userBio.twitter_username}}">{{userBio.twitter_username}}</a></p></span>
+      </div>
+    </div>
+    <p style="margin-left: 10rem;"><a href="{{userBio.html_url}}" target="_blank">{{userBio.html_url}}</a></p>
+    
+    <div class="give_flex" style="flex-wrap: wrap;justify-content: center;">
+    <div class="language" *ngFor="let repo of repositories | slice:1 | paginate: { itemsPerPage: pageSize, currentPage: p ,totalItems: 200}">
+      <div (click)="openUrl(repo.html_url)" style="cursor: pointer;">
+      <h2>{{ repo.name }}</h2>
+      <p>{{ repo.description }}</p>
+      <ul class="techstack">
+        <li *ngIf=" repo.language">{{ repo.language }}</li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  
+  <pagination-controls style="text-align: center;" (pageChange)=" onPageChange($event)"></pagination-controls>
+  
+  </div>
+  </div>
+  
+  
