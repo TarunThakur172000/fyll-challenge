@@ -33,9 +33,6 @@ TypeScript
 Contributing
 Contributions are welcome! Please follow the contribution guidelines.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 Acknowledgments
 This project was inspired by Angular documentation.
-Special thanks to the GitHub API for providing access to user repository data.
+Special thanks to the GitHub API for providing access to user repository data an d Fyll for giving me this opportunity to make this project.
